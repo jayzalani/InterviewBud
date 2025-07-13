@@ -100,6 +100,13 @@ const AuthForm = ({ type }: { type: FormType }) => {
   return (
     <div className="card-border lg:min-w-[566px]">
       <div className="flex flex-col gap-6 card py-14 px-10">
+        <div className="absolute -z-10 inset-0 h-full w-full 
+        bg-[linear-gradient(to_right,#73737320_1px,transparent_1px),linear-gradient(to_bottom,#73737320_1px,transparent_1px)] 
+        bg-[size:100px_100px] 
+        [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_80%,transparent_100%)]" />
+
+
+
         <div className="flex flex-row gap-2 justify-center">
           <Image src="/logo.svg" alt="logo" height={32} width={38} />
           <h2 className="text-primary-100">PrepBud</h2>
@@ -151,10 +158,24 @@ const AuthForm = ({ type }: { type: FormType }) => {
             className="font-bold text-user-primary ml-1"
           >
             {!isSignIn ? "Sign In" : "Sign Up"}
+
+
+
           </Link>
+
         </p>
+
+            
+
+
+
+
+
       </div>
     </div>
+
+    
+    
   );
 };
 

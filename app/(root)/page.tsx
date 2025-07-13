@@ -24,9 +24,9 @@ async function Home() {
   return (
     <>
       <section className="card-cta">
-        <div className="flex flex-col gap-6 max-w-lg">
+        <div className="flex flex-col gap-6 text-blue-200 max-w-lg">
           <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
-          <p className="text-lg">
+          <p className="text-lg text-blue-100">
             Practice real interview questions & get instant feedback
           </p>
 
@@ -61,7 +61,7 @@ async function Home() {
               />
             ))
           ) : (
-            <p>You haven&apos;t taken any interviews yet</p>
+            <p className = "text-black font-extrabold  ">You haven&apos;t taken any interviews yet 🥲</p>
           )}
         </div>
       </section>
